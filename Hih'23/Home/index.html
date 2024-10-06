@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Gabarito:wght@700;900&family=Josefin+Sans&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@700;900&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gabarito&display=swap" rel="stylesheet"> 
+<title>Home</title>  
+</head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <!-- particles.js container -->
+    <div id="particles-js"></div>
+    <nav class="header-nav">
+      <div class="branding">
+          <a href=#><img src="src/womens-power.png" alt=""></a>
+          <h1 class="brand-name">CAMPUS SEC</h1>
+      </div>
+      <div class="nav-buttons">
+          <a class='nav-btn' href="D:\Hih'23\Home\index.html">Home</a>
+          <a href="D:\Hih'23\Dashboard student\Index.html" class="nav-btn">Dashboard</a>
+          <a class='nav-btn' href="D:\Hih'23\Signup\Index.html">Register As College</a>
+          <a href="D:\Hih'23\Login\index.html" class="nav-btn" >Login</a>
+         
+      </div>
+    </nav>
+    
+    <h1>
+      <a href="" class="typewrite" data-period="2000" data-type='[ "WE MAKE CAMPUS SECURE","SAFE CAMPUS,BRIGHT FUTURE.", "SECURE LEARNING ENVIRONMENT", "WE BANG RAGGERS." ]'>
+        <span class="wrap"></span>
+      </a>
+    </h1>
+    
+    <!-- stats - count particles -->
+    <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- stats.js lib -->
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <!-- partial -->
+    <script src="./script.js"></script>
+    <script class="typ">var TxtType = function(el, toRotate, period) {
+      this.toRotate = toRotate;
+      this.el = el;
+      this.loopNum = 0;
+      this.period = parseInt(period, 10) || 2000;
+      this.txt = '';
+      this.tick();
+      this.isDeleting = false;
+  };
+
+  TxtType.prototype.tick = function() {
+      var i = this.loopNum % this.toRotate.length;
+      var fullTxt = this.toRotate[i];x
+
+      if (this.isDeleting) {
+      this.txt = fullTxt.substring(0, this.txt.length - 1);
+      } else {
+      this.txt = fullTxt.substring(0, this.txt.length + 1);
+      }
+
+      this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+      var that = this;
+      var delta = 200 - Math.random() * 100;
+
+      if (this.isDeleting) { delta /= 2; }
+
+      if (!this.isDeleting && this.txt === fullTxt) {
+      delta = this.period;
+      this.isDeleting = true;
+      } else if (this.isDeleting && this.txt === '') {
+      this.isDeleting = false;
+      this.loopNum++;
+      delta = 500;
+      }
+
+      setTimeout(function() {
+      that.tick();
+      }, delta);
+  };
+
+  window.onload = function() {
+      var elements = document.getElementsByClassName('typewrite');
+      for (var i=0; i<elements.length; i++) {
+          var toRotate = elements[i].getAttribute('data-type');
+          var period = elements[i].getAttribute('data-period');
+          if (toRotate) {
+            new TxtType(elements[i], JSON.parse(toRotate), period);
+          }
+      }
+      // INJECT CSS
+      var css = document.createElement("style");
+      css.type = "text/css";
+      css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+      document.body.appendChild(css);
+  };</script>
+  <div class="cust"><h1>OUR ESTEMMED CLIENTS</h1></div>
+      <div class="slider">
+        <div class="slide-track">
+          <div class="slide">
+            <img src="src/sai.png"  height="100" width="250"  alt="" />
+          </div>
+          <div class="slide">
+            <img src="src/mit.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="src/iit.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="src/easw.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="src/st.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="src/mot.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="src/sai.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="src/st.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="src/sai.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="src/easw.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="src/vel.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="src/mit.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="src/mot.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="src/sai.png" height="100" width="250" alt="" />
+          </div>
+       
+          <div class="slide">
+            <img src="src/mit.png" height="100" width="250" alt="" />
+          </div>
+        
+          <div class="slide">
+            <img src="src/easw.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="src/st.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="src/mot.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="src/sai.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="src/st.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="src/sai.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="src/easw.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="src/vel.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="src/mit.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="src/mot.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="src/sai.png" height="100" width="250" alt="" />
+          </div>
+       
+          <div class="slide">
+            <img src="src/mit.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="src/iit.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="src/easw.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="src/st.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="src/mot.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="src/sai.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="src/st.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="src/sai.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="src/easw.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="src/vel.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="src/mit.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="src/mot.png" height="100" width="250" alt="" />
+          </div>
+          <div class="slide">
+            <img src="src/sai.png" height="100" width="250" alt="" />
+          </div>
+        </div>
+      </div>
+
+
+  </body>
+</html>

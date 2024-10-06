@@ -1,0 +1,239 @@
+/* ---- reset ---- */
+body {
+    margin: 0;
+    font: normal 75% Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: 50% 50%;
+}
+
+/* ---- stats.js ---- */
+.count-particles {
+    background: #000022;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13E8E9;
+    font-size: .8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.js-count-particles {
+    font-size: 1.1em;
+}
+
+#stats,
+.count-particles {
+    -webkit-user-select: none;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#stats {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+}
+
+.count-particles {
+    border-radius: 0 0 3px 3px;
+}
+
+
+.header-nav {
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5% -3%;
+    position: fixed;
+    width: 100%;
+    backdrop-filter: blur(2px) saturate(180%);
+    -webkit-backdrop-filter: blur(2px) saturate(180%);
+    background-color: rgba(0, 0, 0, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    z-index: 9999;
+    transition: 0.4s;
+    font-family: 'Gabarito', sans-serif;
+  
+
+}
+
+.header-nav .branding img {
+    margin-top: 7%;
+    padding-top: 10px;
+    padding-left: 20px;
+    display: inline-block;
+    width: 100px;
+    transition: width 0.4s;
+  }
+
+  .branding {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    margin-right: auto;
+    font-size: 25px;
+  }
+  .brand-name{
+    color: white;
+  }
+  .header-nav .nav-buttons {
+    display: flex;
+    gap: 0 18px;
+    margin-right: 3%;
+  }
+  .nav-btn {
+    font-size: 30px;
+    color: #eeeeee;
+    transition: background-color 0.3s;
+    transition: all 0.3s;
+    text-decoration: none;
+    padding: .5rem 1rem;
+    border-radius: 12px;
+}
+.nav-btn:hover{
+  background-color:#d426bd ;
+}
+.typewrite{
+    color: aliceblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    font-size: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.cust {
+  text-align: center; /* Center-align the text */
+  padding: 20px;
+  /* Semi-transparent white background */
+  border-radius: 5px; /* Add rounded corners */
+  position: absolute; /* Position the div within the particle.js container */
+  top: 78%; /* Adjust the top position as needed */
+  left: 50%; /* Adjust the left position as needed */
+  transform: translate(-50%, -50%); /* Center the div both horizontally and vertically */
+  z-index: 2; 
+  font-family: 'Gabarito', sans-serif;/* Place the div above the particle.js canvas */
+}
+
+.cust h1 {
+  color: #fff;
+  font-family: 'Gabarito', sans-serif;/* Text color */
+  font-size:30px; /* Adjust the font size as needed */
+}
+
+/* Keyframes for sliding animation */
+@-webkit-keyframes scroll {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(calc(-250px * 7));
+  }
+}
+
+@keyframes scroll {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(calc(-250px * 7));
+  }
+}
+
+/* Styles for the slider */
+.slider {
+  /* Semi-transparent white background for the glass effect */
+  border-radius: 10px; /* Add rounded corners for a glassy look */
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 100px;
+  margin: auto;
+  top: 75%;
+  overflow: hidden;
+  position: relative;
+  width: 960px;
+  display: flex;
+  left: 10%;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  /* Apply a blur effect to create a glass effect */
+  width: 80%;
+}
+
+.slider::before,
+.slider::after {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.2) 0%, transparent 100%); /* Transparent gradient */
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+
+.slider::before {
+  left: -200px; /* Position the left glass edge */
+}
+
+.slider::after {
+  right: -200px; /* Position the right glass edge */
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+/* Slider animation */
+.slider .slide-track {
+  -webkit-animation: scroll 40s linear infinite;
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+
+.slider .slide {
+  height: 100px;
+  width: 250px;
+  background: rgba(255, 255, 255, 0.3); /* Semi-transparent white background for the glass effect */
+  border-radius: 10px; /* Add rounded corners for a glassy look */
+  margin-right: 20px; /* Adjust spacing between loop elements as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Apply a subtle shadow for depth */
+}
+
+
+
+
+ 

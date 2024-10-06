@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gabarito&family=Josefin+Sans&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <!-- particles.js container -->
+    <div id="particles-js">
+        <div class="box-form">
+              <div class ="sign"><h1>Sign up</h1></div>
+              <div class="form" >
+
+              <form action="process_signup.php" method="POST">
+                
+                <label for="College_name">College Name:</label>
+                <br>
+                <input type="text" id="College name" name="College name" required>
+                <br>
+        
+        
+                <label for="email">Email:</label>
+                <br>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="Cordinates">College cordinates(lat,long):</label>
+                <br>
+                <input type="text" id="College cordinates(lat,long)" name="College cordinates(lat,long)" required>
+                <br>
+                <label for="password">Password:</label>
+                <br>
+                <input type="password" id="password" name="password" required>
+                <br>
+                <label for="confirm_password">Confirm Password:</label>
+                <br>
+                <input type="password" id="confirm_password" name="confirm_password" required>
+                <br>
+                <label for="Bonafide">Bonafide:</label>
+                <br>
+                <br>
+                <input type="file" id="file" name="file" accept=".pdf, .doc, .docx">
+                <br>
+                <div  href=" D:\Hih'23\success\Index.html" class="but"><input  type="submit" value="Sign Up"></div>
+                
+            </form>
+          </div>
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+   <!-- stats - count particles -->
+    <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- stats.js lib -->
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    <!-- partial -->
+    <script src="./script.js"></script>
+
+
+</body>
+</html>
